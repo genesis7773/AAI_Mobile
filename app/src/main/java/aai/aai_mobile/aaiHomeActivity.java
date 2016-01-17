@@ -10,7 +10,8 @@ import android.view.View;
 import android.widget.Button;
 import android.view.View.OnClickListener;
 
-public class aaiHomeActivity extends AppCompatActivity {
+public class aaiHomeActivity extends AppCompatActivity{
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -18,6 +19,9 @@ public class aaiHomeActivity extends AppCompatActivity {
         setContentView(R.layout.activity_aai_home);
         addListenerOnButton();
     }
+
+
+
 
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
