@@ -236,7 +236,7 @@ public class editNamePlate extends AppCompatActivity {
             HSSFWorkbook wb = new HSSFWorkbook();
             HSSFSheet spreadsheet = wb.createSheet("AIRHAND");
             //insert logo image into cell
-            InputStream input = new FileInputStream(String.valueOf((getResources().openRawResource(R.raw.AAISPREADSHEETLOGO))));
+            InputStream input = new FileInputStream(String.valueOf((getResources().openRawResource(R.raw.aaispreadsheetlogo))));
 
             byte[] imageBytes = IOUtils.toByteArray(input);
             int pictureIDx = wb.addPicture(imageBytes, Workbook.PICTURE_TYPE_PNG);
