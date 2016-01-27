@@ -1,19 +1,19 @@
 package aai.aai_mobile;
 
-import android.app.Activity;
 import android.content.Context;
 import android.content.Intent;
-import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.support.v7.app.AppCompatActivity;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
 import android.view.View.OnClickListener;
 import android.widget.Button;
 
-public class LOaddEdit extends AppCompatActivity {
+public class LoadEdit extends AppCompatActivity {
 
-    @Override
+    final Context context = this.getApplicationContext();
+
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_loadd_edit);
@@ -44,7 +44,7 @@ public class LOaddEdit extends AppCompatActivity {
 
     public void addListenerOnButton() {
 
-        final Context context = this;
+
         Button btnAddAHU = (Button) findViewById(R.id.btnAddAHU);
 
         btnAddAHU.setOnClickListener(new OnClickListener() {
@@ -58,7 +58,41 @@ public class LOaddEdit extends AppCompatActivity {
 
 
         });
+
+
+        Button btnEditCFM = (Button) findViewById(R.id.btnEditCFM);
+
+        btnEditCFM.setOnClickListener(new OnClickListener() {
+
+            @Override
+            public void onClick(View v){
+
+                Intent intent = new Intent(context,editCfm.class);
+                startActivity(intent);
+
+
+            }
+        });
+
+        Button btnEditNamePlate = (Button) findViewById(R.id.btnEditNamePlate);
+
+        btnEditNamePlate.setOnClickListener(new OnClickListener() {
+
+           @Override
+           public void onClick(View v){
+               Intent intent = new Intent(context, editNamePlate.class);
+               startActivity(intent);
+           }
+
+        });
+
+
     }
+
+
+
+
+
     public void btnSetupBuild(View v) {
         finish();
     }

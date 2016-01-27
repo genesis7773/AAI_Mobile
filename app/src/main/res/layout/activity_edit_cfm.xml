@@ -1,0 +1,235 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent"
+    android:orientation="horizontal">
+
+    <GridLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:columnCount="5"
+        android:rowCount="39"
+        android:orientation="vertical"
+        android:paddingTop="15dp"
+        android:paddingLeft="30dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginBottom="96dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Specified"
+            android:id="@+id/specifiedView"
+            android:layout_row="0"
+            android:layout_column="2"
+            android:paddingRight="15dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Total CFM-FAN"
+            android:id="@+id/textView5"
+            android:layout_row="1"
+            android:layout_column="0" />
+
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/ahuSpecifiedCFMFan"
+            android:layout_row="1"
+            android:layout_column="2"
+            android:paddingLeft="15dp" />
+
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/ahuActualCFMFan"
+            android:layout_row="1"
+            android:layout_column="3" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Total CFM Output"
+            android:id="@+id/textView6"
+            android:layout_row="2"
+            android:layout_column="0" />
+
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/ahuSpecifiedCFMOutput"
+            android:layout_row="2"
+            android:layout_column="2"
+            android:paddingLeft="15dp" />
+
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/ahuActualCFMOutput"
+            android:layout_row="2"
+            android:layout_column="3" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Return Air CFM"
+            android:id="@+id/textView"
+            android:layout_row="3"
+            android:layout_column="0" />
+
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/ahuSpecifiedReturnAirCFM"
+            android:layout_row="3"
+            android:layout_column="2"
+            android:paddingLeft="15dp" />
+
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/ahuActualReturnCFM"
+            android:layout_row="3"
+            android:layout_column="3" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Outside Air CFM"
+            android:id="@+id/textView8"
+            android:layout_row="4"
+            android:layout_column="0" />
+
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/ahuSpecifiedOutsideAirCFM"
+            android:layout_row="4"
+            android:layout_column="2"
+            android:paddingLeft="15dp" />
+
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/ahuActualOutsideAirCFM"
+            android:layout_row="4"
+            android:layout_column="3" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Static Pressure (in)"
+            android:id="@+id/textView7"
+            android:layout_row="5"
+            android:layout_column="0" />
+
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/ahuSpecifiedStaticPressure"
+            android:layout_row="5"
+            android:layout_column="2"
+            android:paddingLeft="15dp" />
+
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/ahuActualStaticPressure"
+            android:layout_row="5"
+            android:layout_column="3" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Inlet Pressure (in)"
+            android:id="@+id/textView9"
+            android:layout_row="6"
+            android:layout_column="0" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/ahuSpecifiedInletPressure"
+            android:layout_row="6"
+            android:layout_column="2"
+            android:text="N/A"
+            android:autoText="true"
+            android:paddingLeft="15dp" />
+
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/ahuActualInletPressure"
+            android:layout_row="6"
+            android:layout_column="3" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Disch. Pressure (in)"
+            android:id="@+id/textView2"
+            android:layout_row="7"
+            android:layout_column="0" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/ahuSpecifiedDischPressure"
+            android:layout_row="7"
+            android:layout_column="2"
+            android:text="N/A"
+            android:autoText="true"
+            android:paddingLeft="15dp" />
+
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/ahuActualDischPressure"
+            android:layout_row="7"
+            android:layout_column="3" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Fan RPM"
+            android:id="@+id/textView4"
+            android:layout_row="8"
+            android:layout_column="0" />
+
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/ahuSpecifiedFanRPM"
+            android:layout_row="8"
+            android:layout_column="2"
+            android:paddingLeft="15dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Actual"
+            android:id="@+id/actualView"
+            android:layout_row="0"
+            android:layout_column="3" />
+
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/ahuActualFanRPM"
+            android:layout_row="8"
+            android:layout_column="3" />
+
+    </GridLayout>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Next"
+        android:id="@+id/btnAHUNameplateSpec"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="53dp" />
+
+</RelativeLayout>

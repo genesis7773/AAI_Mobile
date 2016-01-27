@@ -2,15 +2,16 @@ package aai.aai_mobile;
 
 import android.content.Context;
 import android.content.Intent;
-import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.support.v7.app.AppCompatActivity;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
-import android.widget.Button;
 import android.view.View.OnClickListener;
+import android.widget.Button;
 
-public class aaiHomeActivity extends AppCompatActivity{
+// TODO: 1/23/2016 We need a way to load the reports and parse the data to be handled across the app. 
+public class aaiHomeActivity extends AppCompatActivity {
 
 
     @Override
@@ -59,7 +60,7 @@ public class aaiHomeActivity extends AppCompatActivity{
 
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(context, LOaddEdit.class);
+                Intent intent = new Intent(context, LoadEdit.class);
                 startActivity(intent);
 
             }
