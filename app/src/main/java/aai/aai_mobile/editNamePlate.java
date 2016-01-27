@@ -400,7 +400,23 @@ public class editNamePlate extends AppCompatActivity {
         btnSave.setOnClickListener((new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(context, aaiHomeActivity.class);
+                Intent intent = new Intent(context, editComments.class);
+                Intent i = getIntent();
+                ahuData ahuData = i.getParcelableExtra("ahuData");
+                ahuData.setMotorManu(getNamePlateMotor());
+                ahuData.setNameplateHP(getNamePlateHP());
+                ahuData.setBrakeHP(getNamePlateBrakeHP());
+                ahuData.setFrameSize(getNamePlateFrameSize());
+                ahuData.setPhase(getNamePlatePhase());
+                ahuData.setVoltage(getNamePlateVolt());
+                ahuData.setAmperage(getNamePlateAMP());
+                ahuData.setMotorRPM(getNamePlateMotorRPM());
+                ahuData.setServiceFactor(getNamePlateService());
+                ahuData.setMasterSheave(getNamePlateMasterSheave());
+                ahuData.setFanSheave(getNamePlateFanSheave());
+                ahuData.setBeltSize(getNamePlateBelt());
+                ahuData.setFilter(getNamePlateFilter());
+                intent.putExtra("ahuData", ahuData);
                 grabAllData("SampleReport.xml", "SampleReport.xls");
                 startActivity(intent);
             }
