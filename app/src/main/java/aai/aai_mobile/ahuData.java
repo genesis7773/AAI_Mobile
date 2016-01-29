@@ -7,7 +7,7 @@ import android.os.Parcelable;
  * Created by Aladdin on 1/25/2016.
  */
 public class ahuData implements Parcelable {
-
+    //AHU
     private String ahuNameData;
     private String ahuLocationData;
     private String areaServedData;
@@ -16,7 +16,7 @@ public class ahuData implements Parcelable {
     private String ahuSerialData;
 
 
-
+    //CFM
     private String totalCFMFanSpecified;
     private String totalCFMFanActual;
     private String totalCFMOutletSpecified;
@@ -31,6 +31,9 @@ public class ahuData implements Parcelable {
     private String dischActual;
     private String FanRPMSpecified;
     private String FanRPMActual;
+
+
+    //Nameplate
     private String MotorManu;
     private String nameplateHP;
     private String BrakeHP;
@@ -44,6 +47,14 @@ public class ahuData implements Parcelable {
     private String fanSheave;
     private String beltSize;
     private String filter;
+
+    //Comments
+    private String comments;
+
+    //Notes
+    private String noteData;
+    //Setters
+
 
     public void setAhuNameData(String name){
         ahuNameData = name;
@@ -177,9 +188,14 @@ public class ahuData implements Parcelable {
         filter = fit;
     }
 
-    public String getahuNameData(){
-        return ahuNameData;
-    }
+    public void setComments(String com) { comments = com; }
+
+    public void setNoteData(String notes) { noteData = notes; }
+
+    //Getters
+
+
+    public String getahuNameData(){ return ahuNameData; }
 
     public String getAhuLocationData(){
         return ahuLocationData;
@@ -309,7 +325,9 @@ public class ahuData implements Parcelable {
         return filter;
     }
 
+    public String getComments(){ return comments;}
 
+    public String getNoteData(){ return noteData;}
     @Override
     public int describeContents(){
         return hashCode();
@@ -350,6 +368,8 @@ public class ahuData implements Parcelable {
         dest.writeString(fanSheave);
         dest.writeString(beltSize);
         dest.writeString(filter);
+        dest.writeString(comments);
+        dest.writeString(noteData);
     }
 
     public ahuData(Parcel p){
@@ -386,6 +406,8 @@ public class ahuData implements Parcelable {
         fanSheave = p.readString();
         beltSize = p.readString();
         filter = p.readString();
+        comments = p.readString();
+        noteData = p.readString();
     }
 
     public ahuData(){}

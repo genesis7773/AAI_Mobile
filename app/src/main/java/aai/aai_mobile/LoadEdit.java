@@ -10,6 +10,10 @@ import android.view.View;
 import android.view.View.OnClickListener;
 import android.widget.Button;
 
+
+//TODO: Create for loops to dynamically add buttons to create multiple objects
+
+
 public class LoadEdit extends AppCompatActivity {
 
     final Context context = this.getApplicationContext();
@@ -51,7 +55,7 @@ public class LoadEdit extends AppCompatActivity {
 
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(context, AddAHU.class);
+                Intent intent = new Intent(context, addAHU.class);
                 startActivity(intent);
 
             }
@@ -65,9 +69,9 @@ public class LoadEdit extends AppCompatActivity {
         btnEditCFM.setOnClickListener(new OnClickListener() {
 
             @Override
-            public void onClick(View v){
+            public void onClick(View v) {
 
-                Intent intent = new Intent(context,editCfm.class);
+                Intent intent = new Intent(context, editCfm.class);
                 startActivity(intent);
 
 
@@ -78,22 +82,48 @@ public class LoadEdit extends AppCompatActivity {
 
         btnEditNamePlate.setOnClickListener(new OnClickListener() {
 
-           @Override
-           public void onClick(View v){
-               Intent intent = new Intent(context, editNamePlate.class);
-               startActivity(intent);
-           }
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(context, editNamePlate.class);
+                startActivity(intent);
+            }
 
         });
 
+        Button btnComments = (Button) findViewById(R.id.btnComments);
+
+        btnComments.setOnClickListener(new OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(context, editComments.class);
+                startActivity(intent);
+            }
+        });
+
+
+        Button btnNotes = (Button) findViewById(R.id.btnNotes);
+
+        btnNotes.setOnClickListener(new OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(context, editNotes.class);
+                startActivity(intent);
+            }
+        });
+
+
+
+        Button btnCreateReport = (Button) findViewById(R.id.btnCreateReport);
+
+        btnCreateReport.setOnClickListener(new OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(context, createReport.class);
+                startActivity(intent);
+            }
+        });
 
     }
 
-
-
-
-
-    public void btnSetupBuild(View v) {
-        finish();
-    }
 }
+

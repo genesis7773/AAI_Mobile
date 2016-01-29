@@ -36,8 +36,7 @@ import org.apache.poi.ss.usermodel.Workbook;
 */
 
 
-
-public class AddAHU extends AppCompatActivity {
+public class addAHU extends AppCompatActivity {
 
 
     private EditText ahuName, ahuLocation, areaServed,equipManu,ahuModel, ahuSerial;

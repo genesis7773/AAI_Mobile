@@ -5,7 +5,7 @@
     <application
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
-        android:label="@string/app_name"
+        android:label="AAI Mobile"
         android:theme="@style/AppTheme" >
         <activity
             android:name=".aaiHomeActivity"
@@ -25,24 +25,33 @@
             android:label="Resume Job" >
         </activity>
         <activity
-            android:name=".AddAHU"
+            android:name=".addAHU"
             android:label="Add Air Handler" >
         </activity>
         <activity
             android:name=".addGrill"
             android:configChanges="orientation|keyboardHidden|screenSize"
-            android:label="@string/title_activity_add_grill"
+            android:label="Add Grill"
             android:theme="@style/FullscreenTheme" >
         </activity>
         <activity
             android:name=".editCfm"
             android:label="Edit CFM">
         </activity>
-        <activity android:name=".editNamePlate"
+        <activity
+            android:name=".editNamePlate"
             android:label="Edit Nameplate">
+        </activity>
+        <activity
+            android:name=".editComments"
+            android:label="Edit Comments">
 
         </activity>
+        <activity
+            android:name=".editNotes"
+            android:label="Edit Notes">
 
+        </activity>
     </application>
     <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
 </manifest>

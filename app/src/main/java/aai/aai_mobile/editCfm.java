@@ -222,6 +222,8 @@ public class editCfm extends AppCompatActivity {
                 ahuData current = i.getParcelableExtra("ahuData");
                 current.setTotalCFMFanSpecified(getSpecifiedCFMFan());
                 current.setTotalCFMFanActual(getActualCFMFan());
+                current.setTotalCFMOutletSpecified(getActualCFMOutput());
+                current.setTotalCFMOutletActual(getActualCFMOutput());
                 current.setReturnAirSpecified(getSpecifiedReturnAirCFM());
                 current.setReturnAirActual(getActualReturnAirCFM());
                 current.setOutsideAirSpecified(getSpecifiedOutsideAirCFM());
