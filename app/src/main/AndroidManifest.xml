@@ -1,12 +1,15 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="aai.aai_mobile"  >
+    package="aai.aai_mobile">
+
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.INTERNET" />
 
     <application
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
-        android:label="AAI Mobile"
-        android:theme="@style/AppTheme" >
+        android:label="@string/app_name"
+        android:theme="@style/AAIMaterialTheme">
         <activity
             android:name=".aaiHomeActivity"
             android:label="@string/app_name" >
@@ -24,34 +27,36 @@
             android:name=".resume"
             android:label="Resume Job" >
         </activity>
-        <activity
-            android:name=".addAHU"
-            android:label="Add Air Handler" >
-        </activity>
-        <activity
-            android:name=".addGrill"
-            android:configChanges="orientation|keyboardHidden|screenSize"
-            android:label="Add Grill"
-            android:theme="@style/FullscreenTheme" >
-        </activity>
-        <activity
-            android:name=".editCfm"
-            android:label="Edit CFM">
-        </activity>
-        <activity
-            android:name=".editNamePlate"
-            android:label="Edit Nameplate">
-        </activity>
-        <activity
-            android:name=".editComments"
-            android:label="Edit Comments">
 
+        <Fragment
+            android:name=".addAHU"
+            android:label="Add Air Handler">
+
+        </Fragment>
+        <activity
+            android:name=".ui.addGrill"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:label="Add Grill">
+        </activity>
+
+        <fragment
+            android:name=".editCfm"
+            android:label="Edit CFM"></fragment>
+        <fragment
+            android:name=".editNamePlate"
+            android:label="Edit Nameplate"></fragment>
+        <activity
+            android:name=".ui.editComments"
+            android:label="Edit Comments">
         </activity>
         <activity
-            android:name=".editNotes"
-            android:label="Edit Notes">
+            android:name=".ui.editNotes"
+            android:label="Edit Notes"></activity>
+        <activity
+            android:name=".preEngineering"
+            android:label="Pre-Engineering">
 
         </activity>
     </application>
-    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+
 </manifest>

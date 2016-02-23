@@ -1,28 +1,41 @@
 package aai.aai_mobile;
 
 import android.content.Context;
-import android.content.Intent;
 import android.os.Bundle;
-import android.support.v7.app.AppCompatActivity;
+import android.support.v4.app.FragmentActivity;
+import android.support.v7.widget.RecyclerView;
 import android.view.Menu;
 import android.view.MenuItem;
-import android.view.View;
-import android.view.View.OnClickListener;
-import android.widget.Button;
+
+import butterknife.Bind;
+import butterknife.ButterKnife;
 
 
 //TODO: Create for loops to dynamically add buttons to create multiple objects
+//TODO: We have to make the entire layout create itself when OnCreate() is called, otherwise Butterknife can't bind shit and the program crashes.
 
 
-public class LoadEdit extends AppCompatActivity {
+public class LoadEdit extends FragmentActivity {
 
-    final Context context = this.getApplicationContext();
+    private Context context = LoadEdit.this;
+    @Bind(R.id.load_edit_Recycler)
+    RecyclerView mRecyclerView;
+    private RecyclerView.Adapter mAdapter;
+    private RecyclerView.LayoutManager mLayoutManager;
 
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_loadd_edit);
-        addListenerOnButton();
+        ButterKnife.bind(this);
+
+        Bundle b = getIntent().getExtras();
+        int nAHU, nGrills, nChillers, nCT, nNamePlates, nComments, nNotes;
+        nAHU = b.getInt("AHUs");
+        nGrills = b.getInt("Grills");
+        nNamePlates = b.getInt("AHUs");
+
     }
+
 
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
@@ -44,85 +57,6 @@ public class LoadEdit extends AppCompatActivity {
         }
 
         return super.onOptionsItemSelected(item);
-    }
-
-    public void addListenerOnButton() {
-
-
-        Button btnAddAHU = (Button) findViewById(R.id.btnAddAHU);
-
-        btnAddAHU.setOnClickListener(new OnClickListener() {
-
-            @Override
-            public void onClick(View v) {
-                Intent intent = new Intent(context, addAHU.class);
-                startActivity(intent);
-
-            }
-
-
-        });
-
-
-        Button btnEditCFM = (Button) findViewById(R.id.btnEditCFM);
-
-        btnEditCFM.setOnClickListener(new OnClickListener() {
-
-            @Override
-            public void onClick(View v) {
-
-                Intent intent = new Intent(context, editCfm.class);
-                startActivity(intent);
-
-
-            }
-        });
-
-        Button btnEditNamePlate = (Button) findViewById(R.id.btnEditNamePlate);
-
-        btnEditNamePlate.setOnClickListener(new OnClickListener() {
-
-            @Override
-            public void onClick(View v) {
-                Intent intent = new Intent(context, editNamePlate.class);
-                startActivity(intent);
-            }
-
-        });
-
-        Button btnComments = (Button) findViewById(R.id.btnComments);
-
-        btnComments.setOnClickListener(new OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Intent intent = new Intent(context, editComments.class);
-                startActivity(intent);
-            }
-        });
-
-
-        Button btnNotes = (Button) findViewById(R.id.btnNotes);
-
-        btnNotes.setOnClickListener(new OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Intent intent = new Intent(context, editNotes.class);
-                startActivity(intent);
-            }
-        });
-
-
-
-        Button btnCreateReport = (Button) findViewById(R.id.btnCreateReport);
-
-        btnCreateReport.setOnClickListener(new OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Intent intent = new Intent(context, createReport.class);
-                startActivity(intent);
-            }
-        });
-
     }
 
 }

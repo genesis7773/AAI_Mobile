@@ -1,5 +1,9 @@
 <resources>
 
     <color name="black_overlay">#66000000</color>
-
+    <color name="colorPrimaryDark">#2369FF</color>
+    <color name="colorPrimary">#4EA1FF</color>
+    <color name="txtColorPrimary">#FFFFFF</color>
+    <color name="navigationBarColor">#000000</color>
+    <color name="colorAccent">#408FB7</color>
 </resources>
