@@ -1,5 +1,3 @@
-<<<<<<< HEAD
+
 include ':backend'
-=======
 include ':app', ':backend'
->>>>>>> origin/master
