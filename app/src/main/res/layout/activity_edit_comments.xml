@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent"
+    android:fillViewport="false">
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="textMultiLine"
+        android:ems="10"
+        android:id="@+id/commentSection"
+        android:editable="true"
+        android:enabled="true"
+        android:minLines="6"
+        android:maxLines="6"
+        android:isScrollContainer="true"
+        android:hint="Enter in your Comments here."
+        android:background="#fafafa"
+        android:textIsSelectable="true"
+        android:focusable="true"
+        android:gravity="top"
+        android:padding="24dp"
+        style="@style/Base.TextAppearance.AppCompat.Large"
+        />
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/commentSection"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="131dp">
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Save Comments"
+            android:id="@+id/btnEditComments"
+            android:layout_gravity="center_horizontal" />
+    </LinearLayout>
+</RelativeLayout>

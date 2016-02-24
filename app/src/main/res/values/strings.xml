@@ -1,13 +1,43 @@
 <resources>
-    <string name="app_name">AAI_Mobile</string>
+    <string name="app_name">AAI Mobile Technician Assistant</string>
 
     <string name="hello_world">Hello world!</string>
     <string name="action_settings">Settings</string>
-    <string name="title_activity_loadd_edit">LOaddEdit</string>
+    <string name="title_activity_load_edit">LoadEdit</string>
     <string name="title_activity_resume">resume</string>
-    <string name="title_activity_add_ahu">AddAHU</string>
-
-    <string name="title_activity_add_grill">addGrill</string>
+    <string name="title_activity_add_ahu">AHU</string>
+    <string name="title_activity_add_grill">Grill</string>
     <string name="dummy_button">Dummy Button</string>
     <string name="dummy_content">DUMMY\nCONTENT</string>
+    <string name="drawer_Open">Open</string>
+    <string name="drawer_close">Close</string>
+    <string name="nav_item_home">Home</string>
+    <string name="nav_item_PreEngineering">Pre-Engineering</string>
+    <string name="nav_item_Setup">Setup</string>
+    <string name="nav_item_Report">Reports</string>
+    <string name="nav_item_Create_Report">Create Reports</string>
+    <string name="nav_item_Open_Report">Open Report</string>
+    <string name="nav_item_Current_Report">Current Report</string>
+    <string name="Setup_building">Setup Building</string>
+    <string name="Resume_Active">Resume Active Job</string>
+    <!-- Report Drawer -->
+    <string-array name="nav_Report_array">
+        <item>@string/nav_item_Create_Report</item>
+        <item>@string/nav_item_Open_Report</item>
+        <item>@string/nav_item_Current_Report</item>
+    </string-array>
+    <!-- Navigation Drawer -->
+    <string-array name="nav_drawer_labels">
+        <item>@string/nav_item_home</item>
+        <item>@string/nav_item_PreEngineering</item>
+        <item>@string/nav_item_Setup</item>
+        <item>@string/nav_item_Report</item>
+    </string-array>
+    <!--pre-engineering hints -->
+    <string name="hint_AHU">AHU</string>
+    <string name="hint_Diffuser">Diffuser</string>
+    <string name="hint_Grill">Grills</string>
+    <string name="hint_Chiller">Chillers</string>
+    <string name="hint_Cooling_Towers">Cooling Towers</string>
+    <string name="btnImport">Import</string>
 </resources>

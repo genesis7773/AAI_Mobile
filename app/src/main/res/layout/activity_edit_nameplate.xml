@@ -1,0 +1,292 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent" android:fillViewport="true">
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Nameplate HP"
+            android:id="@+id/namePlateHPView"
+            android:padding="10dp"
+            android:layout_marginTop="15dp"
+            android:layout_below="@+id/namePlateMotor"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true" />
+
+        <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Motor Manufacturer"
+        android:id="@+id/textView10"
+        android:padding="10dp"
+            android:layout_gravity="center_vertical"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_marginTop="20dp" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/namePlateMotor"
+        android:layout_alignBottom="@+id/textView10"
+        android:layout_alignRight="@+id/textView19"
+        android:layout_alignEnd="@+id/textView19" />
+
+        <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Brake HP"
+        android:id="@+id/brakeView"
+        android:padding="10dp"
+            android:layout_below="@+id/namePlateHPView"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Frame Size"
+        android:id="@+id/frameView"
+        android:padding="10dp"
+        android:layout_below="@+id/brakeView"
+        android:layout_alignParentLeft="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Voltage"
+        android:id="@+id/voltView"
+        android:padding="10dp"
+        android:layout_below="@+id/frameView"
+        android:layout_alignRight="@+id/frameView"
+        android:layout_alignEnd="@+id/frameView" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Phase"
+        android:id="@+id/phaseView"
+        android:padding="5dp"
+        android:layout_below="@+id/voltView"
+        android:layout_alignRight="@+id/brakeView"
+        android:layout_alignEnd="@+id/brakeView" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Amperage"
+        android:id="@+id/textView16"
+        android:padding="10dp"
+        android:layout_below="@+id/phaseView"
+        android:layout_alignRight="@+id/textView17"
+        android:layout_alignEnd="@+id/textView17"
+        android:layout_marginTop="12dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Motor RPM"
+        android:id="@+id/textView17"
+        android:padding="10dp"
+        android:layout_below="@+id/textView16"
+        android:layout_alignRight="@+id/textView18"
+        android:layout_alignEnd="@+id/textView18" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Service Factor"
+        android:id="@+id/textView18"
+        android:padding="10dp"
+        android:layout_below="@+id/namePlateMotorRPM"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Starter Heater Elements"
+        android:id="@+id/textView19"
+        android:padding="10dp"
+        android:layout_below="@+id/textView18"
+        android:layout_alignParentLeft="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Mtr Sheave / Shaft Size"
+        android:id="@+id/textView20"
+        android:paddingLeft="10dp"
+        android:layout_below="@+id/textView19"
+        android:layout_alignLeft="@+id/textView26"
+        android:layout_alignStart="@+id/textView26" />
+
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/namePlateHP"
+            android:layout_alignBottom="@+id/namePlateHPView"
+            android:layout_alignLeft="@+id/namePlateMotor"
+            android:layout_alignStart="@+id/namePlateMotor" />
+
+        <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/namePlateBrakeHP"
+        android:layout_alignBottom="@+id/brakeView"
+        android:layout_alignLeft="@+id/namePlateHP"
+        android:layout_alignStart="@+id/namePlateHP" />
+
+        <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/namePlateFrameSize"
+        android:layout_alignBottom="@+id/frameView"
+        android:layout_alignLeft="@+id/namePlateBrakeHP"
+        android:layout_alignStart="@+id/namePlateBrakeHP" />
+
+        <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="numberDecimal"
+        android:ems="10"
+        android:id="@+id/namePlatePhase"
+        android:layout_alignBottom="@+id/phaseView"
+        android:layout_alignLeft="@+id/namePlateAmperage"
+        android:layout_alignStart="@+id/namePlateAmperage" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="number"
+        android:ems="10"
+        android:id="@+id/namePlateAmperage"
+        android:layout_above="@+id/textView17"
+        android:layout_alignLeft="@+id/namePlateService"
+        android:layout_alignStart="@+id/namePlateService" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="number"
+        android:ems="10"
+        android:id="@+id/namePlateMotorRPM"
+        android:layout_alignBaseline="@+id/textView17"
+        android:layout_alignBottom="@+id/textView17"
+        android:layout_alignLeft="@+id/namePlateService"
+        android:layout_alignStart="@+id/namePlateService" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="number"
+        android:ems="10"
+        android:id="@+id/namePlateService"
+        android:layout_alignBottom="@+id/textView18"
+        android:layout_toRightOf="@+id/namePlateHPView"
+        android:layout_toEndOf="@+id/namePlateHPView" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Fan Sheave /Shaft Size"
+        android:id="@+id/textView23"
+        android:paddingLeft="10dp"
+        android:layout_marginTop="16dp"
+        android:layout_below="@+id/textView20"
+        android:layout_alignRight="@+id/textView20"
+        android:layout_alignEnd="@+id/textView20" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Belt Size / Quantity"
+        android:id="@+id/textView26"
+        android:paddingLeft="10dp"
+        android:layout_below="@+id/textView23"
+        android:layout_alignLeft="@+id/textView29"
+        android:layout_alignStart="@+id/textView29"
+        android:layout_marginTop="25dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Filter Type / Size / Quantity"
+        android:id="@+id/textView29"
+        android:paddingLeft="10dp"
+        android:layout_below="@+id/beltQuant"
+        android:layout_alignLeft="@+id/textView16"
+        android:layout_alignStart="@+id/textView16"
+        android:layout_marginTop="24dp" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/mTRShaft"
+        android:layout_marginLeft="23dp"
+        android:layout_marginStart="23dp"
+        android:layout_above="@+id/fanShaft"
+        android:layout_toRightOf="@+id/textView29"
+        android:layout_toEndOf="@+id/textView29" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/fanShaft"
+        android:layout_alignBaseline="@+id/textView23"
+        android:layout_alignBottom="@+id/textView23"
+        android:layout_alignLeft="@+id/mTRShaft"
+        android:layout_alignStart="@+id/mTRShaft" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/beltQuant"
+        android:layout_alignBaseline="@+id/textView26"
+        android:layout_alignBottom="@+id/textView26"
+        android:layout_alignLeft="@+id/fanShaft"
+        android:layout_alignStart="@+id/fanShaft" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/filterQuant"
+        android:layout_below="@+id/beltQuant"
+        android:layout_alignLeft="@+id/beltQuant"
+        android:layout_alignStart="@+id/beltQuant" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="number"
+        android:ems="10"
+        android:id="@+id/namePlateVoltage"
+        android:layout_alignBottom="@+id/voltView"
+        android:layout_alignLeft="@+id/namePlatePhase"
+        android:layout_alignStart="@+id/namePlatePhase" />
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="21dp"
+            android:id="@+id/placedForAlignmentDONOTTOUCH">
+
+        </LinearLayout>
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Save and Next"
+            android:id="@+id/btnSaveNamePlate"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true" />
+
+    </RelativeLayout>
+</ScrollView>

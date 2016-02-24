@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent">
+
+
+    <android.support.design.widget.TextInputLayout
+        android:id="@+id/input_layout_AHU"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"></android.support.design.widget.TextInputLayout>
+
+    <android.support.design.widget.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"></android.support.design.widget.TextInputLayout>
+
+    <android.support.design.widget.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"></android.support.design.widget.TextInputLayout>
+
+    <android.support.design.widget.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"></android.support.design.widget.TextInputLayout>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Next"
+        android:id="@+id/btnToSetupPage"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginRight="57dp"
+        android:layout_marginEnd="57dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Enter in number of equipment to be serviced"
+        android:id="@+id/titleView"
+        android:layout_below="@+id/input_layout_AHU"
+        android:layout_centerHorizontal="true" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/btnImport"
+        android:id="@+id/btnImportEngineering"
+        android:layout_alignParentBottom="true"
+        android:layout_toStartOf="@+id/btnToSetupPage"
+        android:layout_marginEnd="59dp" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="number"
+        android:ems="10"
+        android:id="@+id/numberOfCoolingTowers"
+        android:hint="@string/hint_Cooling_Towers"
+        android:layout_below="@+id/numberOfChillers"
+        android:layout_alignStart="@+id/numberOfChillers"
+        android:layout_marginTop="56dp" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="number"
+        android:ems="10"
+        android:id="@+id/numberOfChillers"
+        android:hint="@string/hint_Chiller"
+        android:layout_below="@+id/numberOfGrills"
+        android:layout_alignStart="@+id/numberOfGrills"
+        android:layout_marginTop="54dp" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="number"
+        android:ems="10"
+        android:id="@+id/numberOfGrills"
+        android:hint="@string/hint_Grill"
+        android:layout_below="@+id/numberOfAHU"
+        android:layout_alignStart="@+id/numberOfAHU"
+        android:layout_marginTop="40dp" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="number"
+        android:ems="10"
+        android:id="@+id/numberOfAHU"
+        android:hint="@string/hint_AHU"
+        android:layout_below="@+id/titleView"
+        android:layout_alignStart="@+id/titleView"
+        android:layout_marginTop="40dp" />
+
+</RelativeLayout>
