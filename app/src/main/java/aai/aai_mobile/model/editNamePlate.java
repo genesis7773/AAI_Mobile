@@ -1,4 +1,4 @@
-package aai.aai_mobile.ui;
+package aai.aai_mobile.model;
 
 import android.app.Fragment;
 import android.content.Context;
@@ -11,6 +11,7 @@ import android.widget.Button;
 import android.widget.EditText;
 
 import aai.aai_mobile.R;
+import aai.aai_mobile.model.editComments;
 
 
 /**

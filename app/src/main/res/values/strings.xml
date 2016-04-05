@@ -20,6 +20,7 @@
     <string name="nav_item_Current_Report">Current Report</string>
     <string name="Setup_building">Setup Building</string>
     <string name="Resume_Active">Resume Active Job</string>
+    <string name="AAI_Nav">AAI Technician Assistant Menu</string>
     <!-- Report Drawer -->
     <string-array name="nav_Report_array">
         <item>@string/nav_item_Create_Report</item>

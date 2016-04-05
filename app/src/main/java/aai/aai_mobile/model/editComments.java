@@ -1,4 +1,4 @@
-package aai.aai_mobile.ui;
+package aai.aai_mobile.model;
 
 
 import android.content.Context;

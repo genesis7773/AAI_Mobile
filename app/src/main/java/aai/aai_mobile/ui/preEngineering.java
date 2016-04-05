@@ -1,4 +1,4 @@
-package aai.aai_mobile;
+package aai.aai_mobile.ui;
 
 import android.app.Activity;
 import android.content.Context;
@@ -8,6 +8,7 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
 
+import aai.aai_mobile.R;
 import butterknife.Bind;
 import butterknife.ButterKnife;
 import butterknife.OnClick;

@@ -1,4 +1,4 @@
-package aai.aai_mobile;
+package aai.aai_mobile.util;
 
 import android.content.Context;
 import android.database.sqlite.SQLiteDatabase;

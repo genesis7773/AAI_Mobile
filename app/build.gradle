@@ -48,8 +48,8 @@ dependencies {
     provided('com.google.dagger:dagger-compiler:2.0.2') {
         exclude group: 'com.google.guava'
     }
-    compile 'com.ikimuhendis:ldrawer:0.1'
-
+    compile 'com.squareup.mortar:mortar:0.20'
+    compile 'com.squareup.flow:flow:1.0.0-alpha'
     compile project(path: ':backend', configuration: 'android-endpoints')
 }
 

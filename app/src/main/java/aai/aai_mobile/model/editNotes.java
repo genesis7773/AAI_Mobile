@@ -1,9 +1,13 @@
-package aai.aai_mobile.ui;
+package aai.aai_mobile.model;
 
+import android.annotation.TargetApi;
 import android.app.Activity;
 import android.content.Context;
 import android.content.Intent;
+import android.os.Build;
 import android.os.Bundle;
+import android.os.Handler;
+import android.view.MotionEvent;
 import android.view.View;
 import android.widget.AdapterView;
 import android.widget.AdapterView.OnItemSelectedListener;
@@ -13,7 +17,6 @@ import android.widget.EditText;
 import android.widget.Spinner;
 
 import aai.aai_mobile.R;
-import aai.aai_mobile.createReport;
 
 /**
  * Created by Aladdin on 1/27/2016.
@@ -37,7 +40,7 @@ public class editNotes extends Activity implements OnItemSelectedListener{
         preNotesSpinner.setAdapter(adapter);
         preNotesSpinner.setOnItemSelectedListener(this);
         context = this.getApplicationContext();
-        addListenerToButton();
+
     }
 
 
@@ -86,18 +89,7 @@ public class editNotes extends Activity implements OnItemSelectedListener{
         }
     }
 
-    public void addListenerToButton(){
-        saveNotesButton.setOnClickListener((new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Intent intent = new Intent(context, createReport.class);
-                // Intent i = getIntent();
-                // ahuData current = i.getParcelableExtra("ahuData");
-                //current.setNoteData(grabNotes());
-                //intent.putExtra("ahuData", current);
-                startActivity(intent);
-            }
-        }));
-    }
+
+
 
 }
