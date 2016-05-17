@@ -1,4 +1,4 @@
-package aai.aai_mobile.ui;
+package aai.aai_mobile.ui.Homepage;
 
 /**
  * Created by Aladdin on 4/5/2016.

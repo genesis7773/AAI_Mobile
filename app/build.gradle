@@ -50,6 +50,11 @@ dependencies {
     }
     compile 'com.squareup.mortar:mortar:0.20'
     compile 'com.squareup.flow:flow:1.0.0-alpha'
+    compile 'com.squareup.moshi:moshi:1.1.0'
+    compile 'com.squareup.retrofit2:retrofit:2.0.1'
+    compile 'io.reactivex:rxandroid:1.1.0'
+    compile 'io.reactivex:rxjava:1.1.0'
+    compile 'com.ramotion.foldingcell:folding-cell:1.0.0'
     compile project(path: ':backend', configuration: 'android-endpoints')
 }
 

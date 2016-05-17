@@ -8,10 +8,11 @@
     <application
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
+        android:name=".application.AAIapp"
         android:label="@string/app_name"
         android:theme="@style/AAIMaterialTheme">
         <activity
-            android:name=".ui.aaiHomeActivity"
+            android:name=".ui$Homepage.aaiHomeActivity"
             android:label="@string/app_name" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />

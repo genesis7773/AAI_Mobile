@@ -1,4 +1,4 @@
-package aai.aai_mobile.ui;
+package aai.aai_mobile.ui.Homepage;
 
 import android.content.Context;
 import android.content.res.Configuration;
@@ -21,17 +21,19 @@ import com.google.api.client.extensions.android.json.AndroidJsonFactory;
 import com.google.api.client.googleapis.services.AbstractGoogleClientRequest;
 import com.google.api.client.googleapis.services.GoogleClientRequestInitializer;
 
+import org.greenrobot.eventbus.EventBus;
+
 import java.io.IOException;
 
 import aai.aai_mobile.R;
 import butterknife.Bind;
 import butterknife.ButterKnife;
+import flow.Flow;
 
 // TODO: 1/23/2016 We need a way to load the reports and parse the data to be handled across the app.
 
 
-public class
-        aaiHomeActivity extends AppCompatActivity implements NavigationView.OnNavigationItemSelectedListener {
+public class aaiHomeActivity extends AppCompatActivity implements NavigationView.OnNavigationItemSelectedListener {
 
     @Bind(R.id.toolbar)
     Toolbar mToolbar;
@@ -55,10 +57,16 @@ public class
         drawerToggle.syncState();
         mSelectedId=savedInstanceState ==null ? R.id.navigation_Home: savedInstanceState.getInt("SELECTED_ID");
         itemSelection(mSelectedId);
+        EventBus.getDefault().register(this);
         //Testing backend
         //new EndpointsAsyncTask().execute(new Pair<Context, String>(this, "You!"));
         //Nav bar, may move to new activity
 
+    }
+    //installs flow into app
+    @Override protected void attachBaseContext(Context baseContext) {
+        baseContext = Flow.configure(baseContext, this).install();
+        super.attachBaseContext(baseContext);
     }
     //sets toolbar
     private void setToolbar(){
@@ -88,6 +96,7 @@ public class
 
             case R.id.navigation_Home:
                 mDrawerLayout.closeDrawer(GravityCompat.START);
+
                 break;
 
             case R.id.navigation_PreEngineering:
@@ -119,6 +128,7 @@ public class
         super.onConfigurationChanged(newConfig);
         drawerToggle.onConfigurationChanged(newConfig);
     }
+
 
 
 
